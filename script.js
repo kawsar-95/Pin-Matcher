@@ -1,4 +1,4 @@
-// Disable Notification section by myLoadFunction()
+// Disable Notification
 function myLoadFunction() {
   var unsuccess = document.getElementById("pinNotMatch");
   unsuccess.style.display = "none";
