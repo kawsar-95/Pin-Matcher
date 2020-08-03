@@ -18,7 +18,7 @@
             </div>
             <div id="door2" class="col-md-6">
                 <div class="input-section half-width calculator">
-                    <input id="input_number"class="form-control " type="text"></input>
+                    <input id="input-number"class="form-control " type="text"></input>
                     <div class="numbers">
                         <div class="calc-body calculator__keys">
                             <div class="calc-button-row ">
@@ -37,13 +37,13 @@
                               <div onclick="displayNumber('3')"class="button ">3</div>
                             </div>
                             <div class="calc-button-row ">
-                                <div onclick="errorCorrection()" class="button"><</div>
+                                <div onclick="resetButton()" class="button"><</div>
                                 <div onclick="displayNumber('0')" class="button">0</div>
                                 <div onclick="clearDisplay()"  class="button">C</div>
                             </div>
                             <div>
-                                <button id="check" onclick="passwordMatching()" type="submit" class="submit-btn">Submit</button>
-                                <p  id="countCheck" class="action-left">3 try left</p>
+                                <button id="check" onclick="pinMatcher()" type="submit" class="submit-btn">Submit</button>
+                                <p  id="checkCount" class="action-left">3 try left</p>
                             </div>
                     </div>
                 </div>

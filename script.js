@@ -22,32 +22,32 @@ document
 //Number Pad Operation
 
 function displayNumber(number) {
-  var oldNumber = document.getElementById("input_number").value;
+  var oldNumber = document.getElementById("input-number").value;
   var result = oldNumber + number;
-  document.getElementById("input_number").value = result;
+  document.getElementById("input-number").value = result;
 }
 //Display Clearing
 
 function clearDisplay() {
-  document.getElementById("input_number").value = "";
+  document.getElementById("input-number").value = "";
 }
 //Display error Correction
 
-function errorCorrection() {
+function resetButton() {
   var element = "";
-  var result = document.getElementById("input_number").value;
+  var result = document.getElementById("input-number").value;
 
   for (var i = 0; i < result.length - 1; i++) {
     var element = element + result[i];
   }
-  document.getElementById("input_number").value = element;
+  document.getElementById("input-number").value = element;
 }
 
 //Verification
 
-function passwordMatching() {
+function pinMatcher() {
   var randomNumber = document.getElementById("displayNumber").value;
-  var inputNumber = document.getElementById("input_number").value;
+  var inputNumber = document.getElementById("input-number").value;
   if (inputNumber.length == 4) {
     if (parseInt(randomNumber) == parseInt(inputNumber)) {
       var success = document.getElementById("pinMatch");
@@ -62,7 +62,7 @@ function passwordMatching() {
       clickCount();
     }
   } else {
-    alert("please insert 4 Digit valid numbers");
+    alert("please insert a valid pin");
   }
 }
 
